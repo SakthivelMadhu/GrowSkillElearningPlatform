@@ -3,6 +3,15 @@
 ## Description
 This is a Spring Boot project for the GrowSkill e-learning platform. It includes functionalities for managing courses, user enrollment, and more.
 
+
+
+```
+Name : SAKTHIVEL MADHU
+Phone : 75388 37154
+Email : sakthi130597@gmail.com
+github : https://github.com/SakthivelMadhu/GrowSkillElearningPlatform
+Linkedin : https://www.linkedin.com/in/sakthivel-madhu-864647238/
+```
 ## Project Structure
 
 ```
