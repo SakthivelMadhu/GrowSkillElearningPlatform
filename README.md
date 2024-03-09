@@ -44,6 +44,7 @@ GrowSkillElearningPlatform
                 |-- EnrollmentServiceTest.java
 ```
 
+ER Diagram or DB Diagram : ![Screenshot 2024-03-09 123757](https://github.com/SakthivelMadhu/GrowSkillElearningPlatform/assets/62326876/2ab74178-eca0-42aa-b342-6e6cd809b2eb)
 
 
 ## Getting Started
