@@ -50,7 +50,6 @@ Ref: "users"."user_id" < "enrollments"."user_id"
 
 ![Screenshot 2024-03-09 123757](https://github.com/SakthivelMadhu/GrowSkillElearningPlatform/assets/62326876/2ab74178-eca0-42aa-b342-6e6cd809b2eb)
 
-## Project Structure
 
 ### Features
 1. **Course Management:**
@@ -76,7 +75,7 @@ Ref: "users"."user_id" < "enrollments"."user_id"
 
 
 ## Implementation
-
+## Project Structure
 ```
 GrowSkillElearningPlatform
 |-- src
