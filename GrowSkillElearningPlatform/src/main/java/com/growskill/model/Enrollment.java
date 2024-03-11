@@ -20,14 +20,26 @@ public class Enrollment {
     @JoinColumn(name = "course_id")
     private Course course;
     
-    private LocalDateTime enrollmentDate;
 
-	public Enrollment(Long enrollmentId, User user, Course course, LocalDateTime enrollmentDate) {
+	@Column(name = "payment_status")
+    private boolean paymentStatus;
+
+    private LocalDateTime enrollmentDate;
+    
+    @OneToOne(mappedBy = "enrollment", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Certificate certificate;
+
+	
+
+	public Enrollment(Long enrollmentId, User user, Course course, boolean paymentStatus, LocalDateTime enrollmentDate,
+			Certificate certificate) {
 		super();
 		this.enrollmentId = enrollmentId;
 		this.user = user;
 		this.course = course;
+		this.paymentStatus = paymentStatus;
 		this.enrollmentDate = enrollmentDate;
+		this.certificate = certificate;
 	}
 
 	public Enrollment() {
@@ -65,6 +77,22 @@ public class Enrollment {
 
 	public void setEnrollmentDate(LocalDateTime enrollmentDate) {
 		this.enrollmentDate = enrollmentDate;
+	}
+
+	public boolean isPaymentStatus() {
+		return paymentStatus;
+	}
+
+	public void setPaymentStatus(boolean paymentStatus) {
+		this.paymentStatus = paymentStatus;
+	}
+
+	public Certificate getCertificate() {
+		return certificate;
+	}
+
+	public void setCertificate(Certificate certificate) {
+		this.certificate = certificate;
 	}
     
     

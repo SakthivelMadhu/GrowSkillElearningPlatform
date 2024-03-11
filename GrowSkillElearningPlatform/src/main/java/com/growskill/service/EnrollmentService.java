@@ -19,8 +19,14 @@ public class EnrollmentService {
 
      // Validate and enroll user in the course
      if (!enrollmentRepository.existsByUserAndCourse(existingUser, course)) {
-         Enrollment enrollment = new Enrollment(courseId, existingUser, course, null);
+         Enrollment enrollment = new Enrollment(courseId, existingUser, course, false, null, null);
+         enrollment.setPaymentStatus(true);
          enrollmentRepository.save(enrollment);
+         
+         Certificate certificate = new Certificate();
+         certificate.setEnrollment(enrollment);
+         // set additional certificate details
+         certificateRepository.save(certificate);
      } else {
          throw new EnrollmentNotFoundException("User is already enrolled in this course.");
      }
