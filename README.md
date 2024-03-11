@@ -128,5 +128,6 @@ GrowSkillElearningPlatform
 - Access the application through the defined endpoints in the controllers.
 - Use the provided test classes to understand and extend functionality.
 
-
+## Contributing
+Feel free to contribute by opening issues or submitting pull requests.
 
