@@ -91,7 +91,7 @@ GrowSkillElearningPlatform
 |               |   |-- Course.java
 |               |   |-- Enrollment.java
 |               |-- repository
-|               |   |-- CourseRepository.java
+|               |   |-- CertificateRepository.java
 |               |   |-- UserRepository.java
 |               |   |-- CourseRepository.java
 |               |   |-- EnrollmentRepository.java
